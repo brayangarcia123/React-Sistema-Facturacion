@@ -6,7 +6,7 @@ const Footer = () => {
 <>
     <NavContainer>
         <footer className="bg-2C5282 py-3">
-        <div className="container text-center">
+        <div className="footer">
             <p>&copy; Solar Representaciones S.A.C. - Todos los derechos reservados.</p>
         </div>
         </footer>
