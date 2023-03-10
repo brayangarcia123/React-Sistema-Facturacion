@@ -55,7 +55,7 @@ const Sidebar = ({children}) =>{
     return(
         <div className="todo">
             <div className="sidebar">
-                <div>
+                <div className="links">
                     {
                         menuItems.map((item,index)=>(
                                 <NavLink to={item.path} key={index} className="link" activeclassName="active">

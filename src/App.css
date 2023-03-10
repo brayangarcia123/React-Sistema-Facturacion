@@ -9,14 +9,10 @@
 }
 main{
     width: 100%;
-    padding: 5%;
+    padding: 3%;
 }
 
-.sidebar{
-    background: #2A4365;
-    height: full;
-    padding: 70px;
-}
+
 .link_text{
     color: white;
     padding: 10px 5px;
@@ -25,6 +21,41 @@ main{
 .footer{
     text-align: center;
 }
+
+.sidebar{
+    display: flex;
+    background: #2A4365;
+    height: 100vh;
+    padding: 20px; 
+    border: 4px solid black;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.links{
+    border: 4px solid black;
+}
+
 .cerrar{
+    border: 4px solid black;
     color: red;
+}
+
+.clientes{
+    height: 650px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 20% 10% 60% auto;
+    background-color: lightgreen;
+    border: 1px solid black;
+    padding: 10px;
+}
+.cliente{
+    background-color: aquamarine;
+    border: 4px solid black;
+    text-align: center;  
+}
+
+.c1{
+
 }
