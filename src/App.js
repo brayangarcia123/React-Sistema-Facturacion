@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import CharacterList from './CharacterList';
 import Header from './header/Header';
@@ -20,6 +19,7 @@ function App() {
               <Route path="/" element={<Main/>}/>
               <Route path="/customer" element={<Customer/>}/>
               <Route path="/seller" element={<Seller/>}/>
+              <Route path="/characterlist" element={<CharacterList/>}/>
             </Routes>
           </Sidebar>
         </BrowserRouter>

@@ -1,10 +1,10 @@
-import React, { Children } from "react";
-import { NavLink } from "react-bootstrap";
+import React from "react";
+import { NavLink } from 'react-router-dom';
  
 const Sidebar = ({children}) =>{
     const menuItems=[
         {
-            path: "/main",
+            path: "/",
             name: "Inicio"
         },
         {
@@ -16,7 +16,7 @@ const Sidebar = ({children}) =>{
             name: "Vendedores"
         },
         {
-            path: "/product",
+            path: "/characterlist",
             name: "Productos"
         },
         {
@@ -55,17 +55,19 @@ const Sidebar = ({children}) =>{
     return(
         <div className="todo">
             <div className="sidebar">
-                {
-                    menuItems.map((item,index)=>(
-                        <div>
-                            <NavLink to={item.path} key={index} className="link" activeclassName="active">
-                                <div className="link_text">{item.name}</div>
-                            </NavLink>
-                        </div>
-                        
-                    )
-                    )
-                }
+                <div>
+                    {
+                        menuItems.map((item,index)=>(
+                                <NavLink to={item.path} key={index} className="link" activeclassName="active">
+                                    <div className="link_text">{item.name}</div>
+                                </NavLink>  
+                        )
+                        )
+                    }
+                </div>
+                <div className="cerrar">
+                    <p>Cerrar sesion</p>
+                </div>
             </div>
             <main>
                 {children}

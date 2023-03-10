@@ -14,7 +14,7 @@ main{
 
 .sidebar{
     background: #2A4365;
-    height: 100vh;
+    height: full;
     padding: 70px;
 }
 .link_text{
@@ -24,4 +24,7 @@ main{
 }
 .footer{
     text-align: center;
+}
+.cerrar{
+    color: red;
 }
